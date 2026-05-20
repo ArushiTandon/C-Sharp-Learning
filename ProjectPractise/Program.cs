@@ -5,9 +5,11 @@
        
         static void Main(string[] args)
         {
-            SwapProgram.Swap();
-            
-           
+            DataTypes dataTypes = new DataTypes();
+            dataTypes.PDataTypes();
+            dataTypes.DDataTypes();
+
+
         }
     }
 }
