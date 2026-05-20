@@ -5,9 +5,8 @@
        
         static void Main(string[] args)
         {
-            Operations obj = new Operations();
-            obj.Accept();
-            obj.Add();
+            SwapProgram.Swap();
+            
            
         }
     }
