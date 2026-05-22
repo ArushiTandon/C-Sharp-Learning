@@ -5,9 +5,8 @@
        
         static void Main(string[] args)
         {
-            DataTypes dataTypes = new DataTypes();
-            dataTypes.PDataTypes();
-            dataTypes.DDataTypes();
+            GreatestNumber obj = new GreatestNumber();
+            obj.CheckGreatest();
 
 
         }
