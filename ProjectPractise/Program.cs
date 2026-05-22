@@ -5,12 +5,12 @@
        
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number to print its multiplication table:");
+            Console.WriteLine("Enter a number to print its reverse :");
 
             int number = Convert.ToInt32(Console.ReadLine());
 
-            PrintTable obj = new PrintTable();
-            obj.Print(number);
+            ReverseNumber obj = new ReverseNumber();
+            obj.Reverse(number);
 
 
         }
