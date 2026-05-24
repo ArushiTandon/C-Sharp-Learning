@@ -9,14 +9,18 @@ namespace ProjectPractise
         public void Pattern()
         {
 
-            for ( int i = 5; i >= 0; i--)
+            for(int i = 1; i <= 3; i++)
             {
-                char ch = 'A';
-
-                for (int j = 1; j <= i; j++)
+                for( int space = 2; space >= i; space--)
                 {
-                    Console.Write(ch++);
+                    Console.Write(" ");
                 }
+
+                for(int j = 1; j <= 2 * i - 1; j++)
+                {
+                    Console.Write("*");
+                }
+
                 Console.WriteLine();
             }
         }
