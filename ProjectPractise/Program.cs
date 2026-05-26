@@ -5,8 +5,8 @@
        
         static void Main(string[] args)
         {
-            BreakContinue conti = new BreakContinue();
-            conti.continueExample();
+            Arrays arr = new Arrays();
+            arr.arrayExample();
 
         }
     }
