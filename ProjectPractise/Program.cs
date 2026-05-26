@@ -5,8 +5,8 @@
        
         static void Main(string[] args)
         {
-            Loops loops = new Loops();
-            loops.Pattern();
+            BreakContinue conti = new BreakContinue();
+            conti.continueExample();
 
         }
     }
