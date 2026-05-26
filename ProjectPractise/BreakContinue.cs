@@ -12,7 +12,7 @@ namespace ProjectPractise
             {
                 if (i % 2 == 0)
                 {
-                    continue;
+                    break;
                 }
                 Console.WriteLine(i);
             }
