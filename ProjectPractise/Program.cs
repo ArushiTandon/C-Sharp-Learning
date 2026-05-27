@@ -5,8 +5,9 @@
        
         static void Main(string[] args)
         {
-            Arrays arr = new Arrays();
-            arr.arrayExample();
+            Employee emp = new Employee();
+            emp.Accept(1,"Arushi", 22);
+            emp.Display();
 
         }
     }
