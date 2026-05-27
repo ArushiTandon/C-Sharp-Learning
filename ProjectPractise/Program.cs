@@ -5,9 +5,8 @@
        
         static void Main(string[] args)
         {
-            Employee emp = new Employee();
-            emp.Accept(1,"Arushi", 22);
-            emp.Display();
+            Console.WriteLine(StaticExample.x);
+            StaticExample.fun();
 
         }
     }
