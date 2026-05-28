@@ -6,18 +6,28 @@ namespace ProjectPractise
 {
     internal class ConstructorExample
     {
+        static int x, y;
+        int a, b;
+
         static ConstructorExample()
         {
-            Console.WriteLine("static Constructor");
+            x = 100;
+            y = 200;
+            Console.WriteLine("static Constructor" + (x + y));
         }
         internal ConstructorExample()
         {
-            Console.WriteLine("Default Constructor");
+            a = 100;
+            b = 200;
+            Console.WriteLine("Default Constructor" + (a - b));
         }
 
-        internal ConstructorExample(int x)
+        internal ConstructorExample(int a, int b)
         {
-            Console.WriteLine("Parameterized Constrcutor: " + x);
+            this.a = a;
+            this.b = b;
+
+            Console.WriteLine("Parameterized Constrcutor: " + (a * b));
         }
     }
 }
