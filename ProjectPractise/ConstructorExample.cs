@@ -29,5 +29,13 @@ namespace ProjectPractise
 
             Console.WriteLine("Parameterized Constrcutor: " + (a * b));
         }
+
+        internal ConstructorExample(ConstructorExample c)
+        {
+            this.a = c.a;
+            this.b = c.b;
+
+            Console.WriteLine("Parameterized Constrcutor: " + (a * b));
+        }
     }
 }

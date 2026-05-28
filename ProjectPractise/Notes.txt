@@ -44,3 +44,30 @@ class B
 	}
 }
 B obj = new B(10, 20);
+
+3. Copy Constructor: it is used to copy the reference of one object to another object.
+class A
+{
+	int a,b;
+	A()
+	{
+	a=10;
+	b=20;
+	}
+
+A(A o) //copy constructor
+{
+this.a = o.a;
+this.b = o.b;
+}
+}
+
+class program
+{
+	psvm()
+	{
+		A obj = new A();
+		A obj1 = new A(obj); //obj1 = obj shallow copy.
+	}
+}
+
