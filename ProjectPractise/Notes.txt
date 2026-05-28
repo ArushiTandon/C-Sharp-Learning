@@ -1,0 +1,46 @@
+﻿Types of constructor 
+1. System Define: this type of constructor will be created by class itself.
+
+class A
+{
+
+}
+.... after compilation
+
+class A
+{
+A()
+ {
+ }
+}
+
+2. User Define: This type of constructor block define by user to initialize dynamic data member of class.
+
+Type of user define costructor
+1. static: this type of constructor will be called w/out object and used to initialize static data member of class.
+
+class A
+{
+	static A()
+	{
+	//CODE BLOCK
+	}
+}
+
+2. non static: this type of constructor will be called with object and used to initialize dynamic data member of class.
+
+class B 
+{
+	B() //non static default constructor
+	{
+	}
+}
+2. Parameterized constructor:
+class B 
+{
+	B(int x, int y)
+	{
+	//code
+	}
+}
+B obj = new B(10, 20);
