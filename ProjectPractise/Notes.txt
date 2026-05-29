@@ -157,4 +157,32 @@ class Addition
 	}
 }
 
-2. Dynamic Polymorphism: 
+2. Dynamic Polymorphism: Functions overriding and overhiding is the example of dynamic polymorphism using this we will create same name method 
+with same parameters in parent and child class.
+
+class OldPhone
+{
+	virtual void fun()
+	{
+	//old code
+	}
+}
+
+class NewPhone : OldPhone
+{
+	override void fun() //function overriding
+	{
+	//new code
+	}
+}
+
+......................................................................
+
+Inheritance: it is the process of creating new class from existing class. 
+used to reduce code reusability and to achieve data abstraction and polymorphism.
+
+Types:
+1. Single Inheritance: when a child class inherits from single parent class.
+2. Multilevel Inheritance: when a child class inherits from parent class and that parent class is also child of another parent class.
+3. Hierarchical Inheritance: when multiple child class inherits from single parent class.
+

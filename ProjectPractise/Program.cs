@@ -7,8 +7,9 @@ namespace ProjectPractise
        
         static void Main(string[] args)
         {
-            OverloadingExample obj = new OverloadingExample();
-            obj.Add(1.5F, 3.5F, 10);
+            B obj = new B();
+            obj.Fun1();
+            obj.Fun();
 
         }
     }
