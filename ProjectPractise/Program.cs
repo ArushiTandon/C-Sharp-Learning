@@ -7,9 +7,10 @@ namespace ProjectPractise
        
         static void Main(string[] args)
         {
-            B obj = new B();
-            obj.Fun1();
+            C obj = new C();
             obj.Fun();
+            obj.Fun1();
+            obj.Fun2();
 
         }
     }
