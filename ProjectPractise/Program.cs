@@ -7,11 +7,9 @@ namespace ProjectPractise
        
         static void Main(string[] args)
         {
-            PropertyExample example = new PropertyExample();
-            example.Width = 200; //setter
-            Console.WriteLine(example.Width); //getter
+            OverloadingExample obj = new OverloadingExample();
+            obj.Add(1.5F, 3.5F, 10);
 
-          
         }
     }
 }

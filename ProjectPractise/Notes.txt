@@ -1,4 +1,5 @@
 ﻿Types of constructor 
+
 1. System Define: this type of constructor will be created by class itself.
 
 class A
@@ -17,7 +18,7 @@ A()
 2. User Define: This type of constructor block define by user to initialize dynamic data member of class.
 
 Type of user define costructor
-1. static: this type of constructor will be called w/out object and used to initialize static data member of class.
+2.1. static: this type of constructor will be called w/out object and used to initialize static data member of class.
 
 class A
 {
@@ -27,7 +28,7 @@ class A
 	}
 }
 
-2. non static: this type of constructor will be called with object and used to initialize dynamic data member of class.
+2.2. non static: this type of constructor will be called with object and used to initialize dynamic data member of class.
 
 class B 
 {
@@ -35,7 +36,8 @@ class B
 	{
 	}
 }
-2. Parameterized constructor:
+
+3. Parameterized constructor:
 class B 
 {
 	B(int x, int y)
@@ -45,7 +47,7 @@ class B
 }
 B obj = new B(10, 20);
 
-3. Copy Constructor: it is used to copy the reference of one object to another object.
+4. Copy Constructor: it is used to copy the reference of one object to another object.
 class A
 {
 	int a,b;
@@ -93,3 +95,66 @@ internal void setWidth
 A obj = new A();
 obj.setWidth = 100; //setter method will be called.
 Console.WriteLine(obj.setWidth); //getter method will be called.
+
+....................................................................
+
+Data Encapsulation: to hide internal data member of class and access it using method or properties.
+
+we will create private data member to implement data encapsulation.
+
+class A
+{
+	private int a;
+}
+
+a is the private data member it can be accessed using method or property. "a" data member cannot access directly.
+
+class A
+{
+private int a = 100;
+
+public int A{
+
+get => this.a;
+set => this.a = value;
+
+}
+
+void fun()
+{
+Console.WriteLine(a);
+}
+}
+
+....................................................................
+Data Absttraction: to hide internal implementation of code is called Data Abs.
+
+we will create abstract class and interface concept to implement data abstraction.
+
+.....................................................................
+
+Polymorphism: it is the ability of an object to take many forms. 
+It allows us to perform a single action in different ways.
+
+TYPES:
+
+1.Static polymorphism: Function overloading is the example of static polymorphism using this we will create same name method with different parameters.
+Constructor is the best example of function overloading bcoz constructor name is same as class name but parameters are different.
+
+class Addition
+{
+	void Add(int a, int b)
+	{
+	Console.WriteLine(a+b);
+	}
+	void Add(int a , int b , int c)
+	{
+	Console.WriteLine(a+b+c);
+	}
+	void Add(float a , float b , int c)
+	{
+	Console.WriteLine(a+b+c);
+	}
+}
+
+2. Dynamic Polymorphism: 
