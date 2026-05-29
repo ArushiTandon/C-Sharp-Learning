@@ -7,8 +7,9 @@ namespace ProjectPractise
        
         static void Main(string[] args)
         {
-            ConstructorExample obj = new ConstructorExample(2, 3);
-            ConstructorExample obj1 = new ConstructorExample(obj);
+            PropertyExample example = new PropertyExample();
+            example.Width = 200; //setter
+            Console.WriteLine(example.Width); //getter
 
           
         }

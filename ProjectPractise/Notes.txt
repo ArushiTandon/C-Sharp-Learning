@@ -71,3 +71,25 @@ class program
 	}
 }
 
+....................................
+
+Property: it is used to provide getter and setter method to read and write the data member value.
+It is basically used to provide data encapsulation to access data memeber indirectly.
+
+class A 
+{
+private int width;
+internal void setWidth
+}
+	get{
+		return this.width;
+	}
+	set{ //PS. if we want to write only read-only property than we can only write getter method, not setter method.
+	this.width = value
+	}
+}
+}
+
+A obj = new A();
+obj.setWidth = 100; //setter method will be called.
+Console.WriteLine(obj.setWidth); //getter method will be called.
