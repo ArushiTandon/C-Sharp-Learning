@@ -7,12 +7,11 @@ namespace ProjectPractise
        
         static void Main(string[] args)
         {
-            Emp obj = new Emp(101, "Arushi", 5000, 500 );
+            FullTimeWorker emp1 = new FullTimeWorker("Arushi");
+            Intern emp2 = new Intern("Rohit");
 
-            Console.WriteLine($"ID: {obj.id}");
-            Console.WriteLine($"Name: {obj.name}");
-            Console.WriteLine($"Salary: {obj.salary}");
-            Console.WriteLine($"Incentive: {obj.incentive}");
+            emp1.CalculateSalary();
+            emp2.CalculateSalary();
 
 
         }

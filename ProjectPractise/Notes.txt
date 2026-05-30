@@ -189,4 +189,6 @@ Types:
 Assignment:
 Inherit Admin(id, name) , Manager(id, name, salary) and employee(Id, name, salary, incentive).
 
-............................................................
+.....................................................................................................
+
+Abstract class : spcl class which cannot be instantiated(canot create object of abstract class) and it is used to achieve data abstraction and polymorphism.
