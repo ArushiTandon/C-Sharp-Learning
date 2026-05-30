@@ -186,3 +186,7 @@ Types:
 2. Multilevel Inheritance: when a child class inherits from parent class and that parent class is also child of another parent class.
 3. Hierarchical Inheritance: when multiple child class inherits from single parent class.
 
+Assignment:
+Inherit Admin(id, name) , Manager(id, name, salary) and employee(Id, name, salary, incentive).
+
+............................................................

@@ -7,10 +7,13 @@ namespace ProjectPractise
        
         static void Main(string[] args)
         {
-            C obj = new C();
-            obj.Fun();
-            obj.Fun1();
-            obj.Fun2();
+            Emp obj = new Emp(101, "Arushi", 5000, 500 );
+
+            Console.WriteLine($"ID: {obj.id}");
+            Console.WriteLine($"Name: {obj.name}");
+            Console.WriteLine($"Salary: {obj.salary}");
+            Console.WriteLine($"Incentive: {obj.incentive}");
+
 
         }
     }
